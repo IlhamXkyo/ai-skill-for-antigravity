@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05080D"/>
+      <stop offset="100%" stop-color="#0A101B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" fill="url(#bg2)"/>
+
+  <text x="44" y="42" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="12.5" font-weight="700" letter-spacing="1.4">HASIL KARYA ARSITEKTUR // PACK-02: CETAK BIRU SISTEM SKALA BESAR &amp; PENGUJIAN OTOMATIS</text>
+  <text x="44" y="74" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="24" font-weight="700">Visualisasi Arsitektur 4-Layer Headless, Diskusi 3 Agen Arsitek &amp; Stress-Test 1.000 Skenario</text>
+  <line x1="44" y1="96" x2="1236" y2="96" stroke="#F5F6FA" stroke-opacity="0.12"/>
+
+  <!-- LEFT: VISUAL ARCHITECTURE BLUEPRINT BOARD -->
+  <rect x="44" y="118" width="730" height="440" rx="14" fill="#090D16" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="72" y="148" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">BLUEPRINT OUTPUT // 4-LAYER HEADLESS APPLICATION ARCHITECTURE (/ARCHITECT)</text>
+  <line x1="44" y1="162" x2="774" y2="162" stroke="#F5F6FA" stroke-opacity="0.08"/>
+
+  <!-- 4 Visual Connected Architecture Nodes -->
+  <rect x="72" y="184" width="315" height="142" rx="10" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+  <text x="92" y="212" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">01 // CORE BUSINESS ENGINE (HEADLESS)</text>
+  <text x="92" y="238" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="15" font-weight="700">Mesin Logika Murni &amp; State</text>
+  <text x="92" y="264" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Terpisah 100% dari tampilan UI agar mudah</text>
+  <text x="92" y="284" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">diuji dan dipakai lintas platform (Web/Mobile).</text>
+  <text x="92" y="310" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11">src/core/ · 0 UI Dependencies</text>
+
+  <rect x="430" y="184" width="315" height="142" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="450" y="212" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">02 // SERVICE &amp; DATA ADAPTERS</text>
+  <text x="450" y="238" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="15" font-weight="700">Koneksi API, Database &amp; Queue</text>
+  <text x="450" y="264" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Mengelola komunikasi server, PostgreSQL,</text>
+  <text x="450" y="284" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Redis cache, dan retry otomatis saat gagal.</text>
+  <text x="450" y="310" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="11">src/services/ · Resilient I/O</text>
+
+  <line x1="387" y1="255" x2="430" y2="255" stroke="#38BDF8" stroke-width="2.5"/>
+
+  <rect x="72" y="376" width="315" height="148" rx="10" fill="#0F172A" stroke="#E2B86B" stroke-width="1.5"/>
+  <text x="92" y="404" fill="#E2B86B" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">03 // FEATURE MODULES</text>
+  <text x="92" y="430" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="15" font-weight="700">Modul Fitur Terisolasi Rapi</text>
+  <text x="92" y="456" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Menambah fitur baru tanpa merusak fitur</text>
+  <text x="92" y="476" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">lama berkat batas modul yang tegas.</text>
+  <text x="92" y="504" fill="#E2B86B" font-family="JetBrains Mono,Consolas,monospace" font-size="11">src/features/ · Deep Modules</text>
+
+  <rect x="430" y="376" width="315" height="148" rx="10" fill="#0F172A" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="450" y="404" fill="#A855F7" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">04 // REACTIVE UI &amp; DESIGN SYSTEM</text>
+  <text x="450" y="430" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="15" font-weight="700">Komponen Visual Cepat &amp; Ringan</text>
+  <text x="450" y="456" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Hanya merender ulang bagian layar yang</text>
+  <text x="450" y="476" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">berubah, bebas lag pada data besar.</text>
+  <text x="450" y="504" fill="#A855F7" font-family="JetBrains Mono,Consolas,monospace" font-size="11">src/shared/ui/ · 60fps Reactive</text>
+
+  <line x1="230" y1="326" x2="230" y2="376" stroke="#E2B86B" stroke-width="2.5"/>
+  <line x1="587" y1="326" x2="587" y2="376" stroke="#A855F7" stroke-width="2.5"/>
+  <line x1="387" y1="450" x2="430" y2="450" stroke="#A855F7" stroke-width="2.5"/>
+
+  <!-- RIGHT: 3-AGENT DIALECTIC TRIAD & AUTOMATED STRESS TEST -->
+  <rect x="798" y="118" width="438" height="440" rx="14" fill="#090D16" stroke="#34D399" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="824" y="148" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">DIALECTIC TRIAD &amp; PROPERTY TESTING</text>
+  <line x1="798" y1="162" x2="1236" y2="162" stroke="#F5F6FA" stroke-opacity="0.08"/>
+
+  <rect x="824" y="182" width="386" height="72" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.4"/>
+  <text x="842" y="206" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">AGEN 1 (THESIS ARCHITECT)</text>
+  <text x="842" y="232" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="13">Merancang desain awal sistem &amp; alur database.</text>
+
+  <rect x="824" y="268" width="386" height="72" rx="8" fill="#0F172A" stroke="#E2B86B" stroke-opacity="0.4"/>
+  <text x="842" y="292" fill="#E2B86B" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">AGEN 2 (ANTITHESIS CHALLENGER)</text>
+  <text x="842" y="318" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="13">Menguji batas beban &amp; mencari celah race-condition.</text>
+
+  <rect x="824" y="354" width="386" height="82" rx="8" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
+  <text x="842" y="378" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">AGEN 3 (FINAL SYNTHESIS &amp; VERIFICATION)</text>
+  <text x="842" y="402" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="13">Menyatukan solusi terkuat &amp; menguji 1.000 kasus</text>
+  <text x="842" y="422" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11.5" font-weight="700">✓ 1,000 / 1,000 Hypothesis Edge-Cases PASSED</text>
+
+  <rect x="824" y="454" width="386" height="80" rx="8" fill="#101827"/>
+  <text x="844" y="482" fill="#94A3B8" font-family="JetBrains Mono,Consolas,monospace" font-size="11">MODERN PYTHON &amp; CODE QUALITY</text>
+  <text x="844" y="512" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="18" font-weight="700">uv · ruff · ty · pytest</text>
+  <text x="1085" y="512" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="16" font-weight="700">0 Errors</text>
+
+  <!-- Bottom Buyer Explanation -->
+  <rect x="44" y="582" width="1192" height="142" rx="14" fill="#090D16" stroke="#F5F6FA" stroke-opacity="0.12"/>
+  <text x="72" y="616" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="12" font-weight="700">APA YANG KAMU DAPATKAN DI PACK-02 (SOFTWARE ENGINEER &amp; SYSTEM ARCHITECT):</text>
+  <text x="72" y="646" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#34D399">Pro-Architect &amp; Dialectic-Architect:</tspan> Struktur kode rapi 4-lapis yang sudah didebatkan oleh 3 agen AI agar tahan banting.</text>
+  <text x="72" y="674" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#38BDF8">Property-Based Testing &amp; Modern Python:</tspan> Pengujian otomatis ribuan input ekstrem untuk mencegah bug di produksi.</text>
+  <text x="72" y="702" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#E2B86B">Karpathy Surgical Discipline:</tspan> AI menulis kode bersih tanpa merusak fitur lain yang sudah berjalan dan tanpa fungsi kosong.</text>
+</svg>

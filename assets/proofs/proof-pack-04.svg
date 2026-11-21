@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760">
+  <rect width="1280" height="760" fill="#07080D"/>
+  <text x="44" y="42" fill="#FF6B2C" font-family="JetBrains Mono,Consolas,monospace" font-size="12.5" font-weight="700" letter-spacing="1.4">HASIL KARYA VISUAL // PACK-04: REVERSE ENGINEERING (/REA) &amp; OTOMASI GITHUB 2-AGEN (/GITHUBME)</text>
+  <text x="44" y="74" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="24" font-weight="700">Bedah Anatomi Desain/Aplikasi Referensi &amp; Rekonstruksi Kode Produksi Bersih + Rilis GitHub</text>
+  <line x1="44" y1="96" x2="1236" y2="96" stroke="#F5F6FA" stroke-opacity="0.12"/>
+
+  <!-- LEFT: VISUAL X-RAY ANATOMY EXTRACTION (/REA) -->
+  <rect x="44" y="118" width="576" height="440" rx="14" fill="#0C0F19" stroke="#FF6B2C" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="70" y="148" fill="#FF6B2C" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">TAHAP 1 // BEDAH ANATOMI VISUAL &amp; ANIMASI REFERENSI (/REA)</text>
+  <line x1="44" y1="162" x2="620" y2="162" stroke="#F5F6FA" stroke-opacity="0.08"/>
+
+  <!-- Exploded 3-Layer UI Deconstruction Graphic -->
+  <rect x="82" y="186" width="496" height="92" rx="10" fill="#131826" stroke="#38BDF8" stroke-dasharray="5 4" stroke-width="1.5"/>
+  <text x="104" y="214" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">LAYER A // EXTRACTED DESIGN TOKENS &amp; GEOMETRY</text>
+  <circle cx="114" cy="248" r="12" fill="#0B0E17" stroke="#F5F6FA" stroke-width="1"/>
+  <circle cx="146" cy="248" r="12" fill="#171C28" stroke="#F5F6FA" stroke-width="1"/>
+  <circle cx="178" cy="248" r="12" fill="#E2B86B"/>
+  <circle cx="210" cy="248" r="12" fill="#34D399"/>
+  <text x="242" y="253" fill="#CBD5E1" font-family="JetBrains Mono,Consolas,monospace" font-size="11.5">Concentric Radius: 18px Outer / 12px Inner</text>
+
+  <rect x="82" y="294" width="496" height="118" rx="10" fill="#131826" stroke="#FF6B2C" stroke-width="1.5"/>
+  <text x="104" y="322" fill="#FF6B2C" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">LAYER B // EXTRACTED MICRO-ANIMATION SPRING CURVE</text>
+  <polyline fill="none" stroke="#FF6B2C" stroke-width="3.5" points="104,392 135,346 175,334 220,330 280,328 360,328 450,328 548,328"/>
+  <text x="245" y="378" fill="#F5F6FA" font-family="JetBrains Mono,Consolas,monospace" font-size="12">cubic-bezier(0.16, 1.0, 0.3, 1.0) · 60fps</text>
+
+  <rect x="82" y="428" width="496" height="104" rx="10" fill="#131826" stroke="#34D399" stroke-width="1.5"/>
+  <text x="104" y="456" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">LAYER C // CLEAN-ROOM PRODUCTION SYNTHESIS</text>
+  <text x="104" y="484" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14" font-weight="700">100% Kode Baru yang Bersih, Modular &amp; Bebas Hak Cipta</text>
+  <text x="104" y="508" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">Siap langsung dipakai di proyek React, Next.js, Vue, atau HTML/CSS milikmu.</text>
+
+  <!-- RIGHT: RECONSTRUCTED APP & GITHUBME 2-AGENT STUDIO -->
+  <rect x="652" y="118" width="584" height="440" rx="14" fill="#0C0F19" stroke="#34D399" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text x="678" y="148" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">TAHAP 2 // HASIL KARYA JADI &amp; OTOMASI REPOSITORI 2-AGEN (/GITHUBME)</text>
+  <line x1="652" y1="162" x2="1236" y2="162" stroke="#F5F6FA" stroke-opacity="0.08"/>
+
+  <!-- Reconstructed Production UI Card -->
+  <rect x="682" y="186" width="524" height="168" rx="12" fill="#121826" stroke="#F5F6FA" stroke-opacity="0.15"/>
+  <text x="708" y="216" fill="#E2B86B" font-family="JetBrains Mono,Consolas,monospace" font-size="10.5">FINISHED PRODUCTION COMPONENT // ADAPTIVE COMMAND PALETTE</text>
+  <rect x="708" y="232" width="472" height="42" rx="8" fill="#080B12" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="728" y="258" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="13.5">⚡ Deploy new edge microservice...                    [⌘K]</text>
+  <rect x="708" y="286" width="228" height="46" rx="8" fill="#192236"/>
+  <text x="726" y="314" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="12">✓ Zero Bundle Bloat</text>
+  <rect x="952" y="286" width="228" height="46" rx="8" fill="#192236"/>
+  <text x="970" y="314" fill="#38BDF8" font-family="JetBrains Mono,Consolas,monospace" font-size="12">✓ State Machine Ready</text>
+
+  <!-- Dual-Agent GitHubMe Card -->
+  <rect x="682" y="372" width="524" height="160" rx="12" fill="#121826" stroke="#34D399" stroke-opacity="0.4"/>
+  <text x="708" y="402" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11" font-weight="700">KOLABORASI 2 AGEN OTONOM: AGEN ALPHA &amp; AGEN BETA (/GITHUBME)</text>
+  <text x="708" y="432" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="15" font-weight="700">Membangun Tool Baru atau Mengaudit Repo GitHub Otomatis</text>
+  <text x="708" y="460" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">• Agen Alpha mencari celah bug/ide fitur, Agen Beta menulis kode &amp; unit test.</text>
+  <text x="708" y="484" fill="#94A3B8" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="12.5">• Otomatis merapikan README, dokumentasi, dan push ke repositori GitHub kamu.</text>
+  <text x="708" y="514" fill="#34D399" font-family="JetBrains Mono,Consolas,monospace" font-size="11.5" font-weight="700">★ GitHub Release Ready · CI/CD &amp; Property Tests Verified</text>
+
+  <!-- Bottom Buyer Summary -->
+  <rect x="44" y="582" width="1192" height="142" rx="14" fill="#0C0F19" stroke="#F5F6FA" stroke-opacity="0.12"/>
+  <text x="72" y="616" fill="#FF6B2C" font-family="JetBrains Mono,Consolas,monospace" font-size="12" font-weight="700">APA YANG KAMU DAPATKAN DI PACK-04 (REVERSE ENGINEERING &amp; GITHUB AUTOMATION):</text>
+  <text x="72" y="646" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#FF6B2C">Plugin REA (/rea):</tspan> Punya referensi web atau animasi keren di internet? AI akan membedah dan membuatkan kode bersihnya untukmu.</text>
+  <text x="72" y="674" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#34D399">Plugin GitHubMe (/githubme):</tspan> Dua agen AI berdiskusi otomatis untuk mengaudit repo GitHub kamu atau merilis proyek open-source baru.</text>
+  <text x="72" y="702" fill="#F5F6FA" font-family="Plus Jakarta Sans,Segoe UI,sans-serif" font-size="14">• <tspan font-weight="700" fill="#38BDF8">Chrome DevTools &amp; Error Recovery:</tspan> Inspeksi langsung elemen web, jaringan API, dan perbaikan bug secara akurat.</text>
+</svg>

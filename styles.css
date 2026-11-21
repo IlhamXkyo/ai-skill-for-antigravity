@@ -1311,11 +1311,295 @@ details[open] .doc-drawer-icon {
 }
 
 /* ==========================================================================
+   INTERACTIVE 3D SCROLLTELLING, VELOCITY KINETICS & MOTION CHOICE HUD
+   ========================================================================== */
+.spread-visual-stage {
+  perspective: 1500px;
+}
+
+.hd-showcase-shell {
+  --scroll-beam-x: 50%;
+  transform-origin: 50% 0%;
+  will-change: transform, opacity;
+  transition: border-color 0.3s var(--poly-ease-out), box-shadow 0.4s var(--poly-ease-out);
+  overflow: hidden;
+}
+
+/* Specular Scroll-Scrubbed Light Beam along top of each showcase */
+.hd-showcase-shell::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: radial-gradient(
+    360px circle at var(--scroll-beam-x, 50%) 50%,
+    var(--poly-accent) 0%,
+    var(--poly-accent-cyan) 45%,
+    transparent 100%
+  );
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* 3D Cursor-Tracking Tilt & Radial Specular Spotlight on HD Creation Cards */
+.hd-frame-btn {
+  position: relative;
+  --spot-x: 50%;
+  --spot-y: 50%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.hd-frame-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    420px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(226, 184, 107, 0.16),
+    rgba(56, 189, 248, 0.06) 40%,
+    transparent 75%
+  );
+  opacity: 0;
+  transition: opacity 0.25s var(--poly-ease-out);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hd-frame-btn:hover::after {
+  opacity: 1;
+}
+
+/* Scroll-Velocity Kinetic Headlines & Dynamic Shimmer */
+.spread-title,
+.section-title,
+.hero-headline {
+  will-change: transform;
+}
+
+body[data-motion-mode="kinetic"] .serif-italic {
+  background: linear-gradient(
+    90deg,
+    var(--poly-accent) 0%,
+    #FFF3D1 35%,
+    var(--poly-accent-cyan) 70%,
+    var(--poly-accent) 100%
+  );
+  background-size: 220% auto;
+  background-position: var(--scroll-shimmer-pos, 0%) 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Interactive Motion Choice Bar inside Hero & Workflow */
+.motion-choice-banner {
+  margin-top: 28px;
+  padding: 14px 20px;
+  background: rgba(14, 18, 29, 0.78);
+  border: 1px solid var(--poly-border-strong);
+  border-radius: var(--poly-radius-inner);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  backdrop-filter: blur(12px);
+}
+
+.motion-choice-label {
+  font-family: var(--poly-font-mono);
+  font-size: 0.75rem;
+  color: var(--poly-text-secondary);
+  letter-spacing: 0.06em;
+}
+
+.motion-choice-label strong {
+  color: var(--poly-accent);
+}
+
+.motion-choice-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.motion-mode-btn {
+  background: var(--poly-surface-1);
+  border: 1px solid var(--poly-border);
+  color: var(--poly-text-secondary);
+  font-family: var(--poly-font-mono);
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s var(--poly-ease-out);
+}
+
+.motion-mode-btn:hover,
+.motion-mode-btn:focus-visible {
+  color: var(--poly-text-primary);
+  border-color: var(--poly-accent);
+}
+
+.motion-mode-btn.is-active {
+  background: var(--poly-accent);
+  color: var(--poly-accent-contrast);
+  border-color: var(--poly-accent);
+  box-shadow: 0 0 18px rgba(226, 184, 107, 0.32);
+}
+
+/* Live Interactive Stage Simulator inside Section 02 Sticky Pane */
+.live-stage-simulator {
+  margin-top: 22px;
+  padding: 18px 20px;
+  background: linear-gradient(160deg, rgba(16, 21, 34, 0.95), rgba(9, 12, 20, 0.98));
+  border: 1px solid var(--poly-border-strong);
+  border-radius: var(--poly-radius-inner);
+  position: relative;
+  overflow: hidden;
+}
+
+.sim-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-family: var(--poly-font-mono);
+  font-size: 0.72rem;
+  color: var(--poly-accent-cyan);
+}
+
+.sim-step-pills {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.sim-step-pill {
+  flex: 1;
+  background: var(--poly-surface-1);
+  border: 1px solid var(--poly-border);
+  color: var(--poly-text-muted);
+  font-family: var(--poly-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s var(--poly-ease-out);
+}
+
+.sim-step-pill.is-active {
+  background: rgba(226, 184, 107, 0.14);
+  border-color: var(--poly-accent);
+  color: var(--poly-accent);
+}
+
+.sim-dynamic-meter {
+  height: 4px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.sim-dynamic-fill {
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(90deg, var(--poly-accent), var(--poly-accent-cyan), var(--poly-accent-emerald));
+  transition: width 0.35s var(--poly-ease-out);
+}
+
+/* Floating Interactive Scrollytelling Cockpit HUD */
+.scrolly-cockpit-hud {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 95;
+  background: rgba(8, 10, 17, 0.88);
+  border: 1px solid rgba(226, 184, 107, 0.32);
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
+  max-width: calc(100vw - 24px);
+  overflow-x: auto;
+}
+
+.hud-chapters {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hud-chapter-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--poly-text-muted);
+  font-family: var(--poly-font-mono);
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s var(--poly-ease-out);
+}
+
+.hud-chapter-btn:hover,
+.hud-chapter-btn:focus-visible {
+  color: var(--poly-text-primary);
+}
+
+.hud-chapter-btn.is-active {
+  background: rgba(226, 184, 107, 0.16);
+  border-color: rgba(226, 184, 107, 0.55);
+  color: var(--poly-accent);
+}
+
+.hud-telemetry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+  border-left: 1px solid var(--poly-border);
+  font-family: var(--poly-font-mono);
+  font-size: 0.7rem;
+  color: var(--poly-text-secondary);
+  white-space: nowrap;
+}
+
+.hud-pct {
+  color: var(--poly-accent);
+  font-weight: 700;
+  min-width: 36px;
+}
+
+.hud-vel {
+  color: var(--poly-accent-cyan);
+  min-width: 68px;
+}
+
+/* ==========================================================================
    SCROLL-REVEAL CHOREOGRAPHY & REDUCED MOTION
    ========================================================================== */
 .reveal-up {
   opacity: 0;
-  transform: translate3d(0, 28px, 0);
+  transform: translate3d(0, 34px, 0);
   transition: opacity 0.8s var(--poly-ease-out), transform 0.8s var(--poly-ease-out);
   will-change: opacity, transform;
 }

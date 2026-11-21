@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
+<body data-motion-mode="kinetic">
   <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
 
   <!-- Top Scrolltelling Progress Filament -->
@@ -80,6 +80,24 @@
             <span>Pesan Langsung ke WhatsApp 085217124804 (Harga 50 / Paket)</span>
             <span aria-hidden="true">↗</span>
           </a>
+        </div>
+
+        <!-- Live Interactive Scroll & Motion Choice Bar (Built into /webcraft) -->
+        <div class="motion-choice-banner" role="region" aria-label="Pilihan Tingkat Interaktivitas Animasi Scroll">
+          <div class="motion-choice-label">
+            <strong>FITUR /WEBCRAFT // PILIHAN INTERAKTIVITAS SCROLL:</strong> AI selalu menanyakan level animasi web yang kamu mau (coba ganti mode live di halaman ini):
+          </div>
+          <div class="motion-choice-group" role="group" aria-label="Mode Animasi Scroll">
+            <button type="button" class="motion-mode-btn is-active" data-set-motion="kinetic">
+              ★ Sangat Interaktif (3D Kinetic Scroll)
+            </button>
+            <button type="button" class="motion-mode-btn" data-set-motion="tactile">
+              Interaktif Sedang (Tactile 60fps)
+            </button>
+            <button type="button" class="motion-mode-btn" data-set-motion="calm">
+              Tenang (Fokus Baca)
+            </button>
+          </div>
         </div>
       </div>
 
@@ -1203,10 +1221,27 @@
             </p>
 
             <div class="scrolltelling-stage-indicator" aria-live="polite">
-              <div class="active-stage-code" id="active-stage-code">TAHAP 01 // CUKUP PANGGIL 1 PERINTAH SESUAI PEKERJAAN</div>
+              <div class="active-stage-code" id="active-stage-code">TAHAP 01 // CUKUP PANGGIL 1 PERINTAH &amp; PILIH LEVEL INTERAKTIF</div>
               <p class="active-stage-desc" id="active-stage-desc">
-                Kamu cukup mengetik 1 perintah utama (misalnya /webcraft untuk semua urusan web), lalu AI mengaktifkan sistem Grill-Me di awal.
+                Kamu cukup mengetik 1 perintah utama (misalnya /webcraft), lalu AI menanyakan gaya desain serta pilihan tingkat interaktivitas animasi scroll yang kamu inginkan di awal.
               </p>
+
+              <!-- Interactive Stage Scrubber & Live Simulation Meter -->
+              <div class="live-stage-simulator" id="live-stage-simulator">
+                <div class="sim-progress-header">
+                  <span>SIMULASI INTERAKTIF ALUR AI // KLIK ATAU SCROLL</span>
+                  <span id="sim-stage-pct" class="tabular-nums">STAGE 1 / 4 (25%)</span>
+                </div>
+                <div class="sim-step-pills" role="tablist" aria-label="Tahapan Kerja AI">
+                  <button type="button" class="sim-step-pill is-active" data-jump-step="0">01. Grill-Me &amp; Motion</button>
+                  <button type="button" class="sim-step-pill" data-jump-step="1">02. Audiens</button>
+                  <button type="button" class="sim-step-pill" data-jump-step="2">03. Riset Web</button>
+                  <button type="button" class="sim-step-pill" data-jump-step="3">04. Auto-Mix QA</button>
+                </div>
+                <div class="sim-dynamic-meter" aria-hidden="true">
+                  <div class="sim-dynamic-fill" id="sim-dynamic-fill"></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1216,16 +1251,16 @@
 
             <article
               class="timeline-chapter is-active"
-              data-stage-code="TAHAP 01 // CUKUP PANGGIL 1 PERINTAH & GRILL-ME DI AWAL"
-              data-stage-desc="Kamu cukup mengetik 1 perintah utama (misalnya /webcraft untuk semua urusan web), lalu AI menanyakan detail kebutuhanmu di awal."
+              data-stage-code="TAHAP 01 // CUKUP PANGGIL 1 PERINTAH & PILIH LEVEL INTERAKTIF"
+              data-stage-desc="Kamu cukup mengetik 1 perintah utama (misalnya /webcraft), lalu AI menanyakan gaya desain serta pilihan tingkat interaktivitas animasi scroll yang kamu inginkan di awal."
             >
               <span class="timeline-node-dot" aria-hidden="true"></span>
-              <div class="chapter-step-num">LANGKAH 01 // 1 PERINTAH TUNGGAL &amp; TANYA DI AWAL (GRILL-ME)</div>
-              <h3 class="chapter-title">Panggil 1 Skill Pekerjaan, AI Bertanya dengan <code>/grill-me</code> di Awal</h3>
+              <div class="chapter-step-num">LANGKAH 01 // 1 PERINTAH TUNGGAL, GRILL-ME &amp; PILIHAN INTERAKTIVITAS SCROLL</div>
+              <h3 class="chapter-title">Panggil 1 Skill Pekerjaan, Pilih Mau Website <span class="serif-italic">Lebih Interaktif</span> atau Tenang</h3>
               <p class="chapter-body">
-                Mau buat landing page dengan efek scroll GSAP dan objek 3D? Kamu tidak perlu memanggil 4 plugin satu per satu. Cukup panggil <code>/webcraft</code>. Jika instruksimu masih singkat, AI otomatis menjalankan <code>/grill-me</code> di awal pembuatan (bukan di akhir) untuk menanyakan gaya tampilan, fitur animasi, dan memberikan 3 pilihan mode perencanaan sebelum mulai bekerja.
+                Mau buat landing page dengan efek 3D scroll perspektif, kartu interaktif yang mengikuti gerakan kursor, atau website minimalis yang tenang? Cukup panggil <code>/webcraft</code>. Di awal pembuatan (lewat <code>/grill-me</code>), AI wajib memberikan pilihan tingkat interaktivitas kepadamu: <strong>(A) Sangat Interaktif / Full Kinetic 3D Scrollytelling</strong>, <strong>(B) Interaktif Sedang / Balanced Tactile 60fps</strong>, atau <strong>(C) Tenang / Fokus Baca</strong>, lengkap dengan 3 pilihan cara perencanaan.
               </p>
-              <div class="chapter-terminal-line">Hasil untuk Kamu: Bebas bingung pilih plugin, dan AI tidak pernah salah tangkap di awal.</div>
+              <div class="chapter-terminal-line">Hasil untuk Kamu: Kamu memegang kendali penuh apakah website ingin dibuat super interaktif atau simpel sejak awal.</div>
             </article>
 
             <article
@@ -1451,6 +1486,24 @@
       </div>
     </section>
   </main>
+
+  <!-- Floating Interactive Scrollytelling Cockpit HUD -->
+  <aside class="scrolly-cockpit-hud" id="scrolly-hud" aria-label="Navigasi Cepat Scrollytelling & Telemetri Scroll">
+    <div class="hud-chapters" role="navigation" aria-label="Loncat ke Paket Skill">
+      <button type="button" class="hud-chapter-btn is-active" data-scroll-to="#top">00 HERO</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-01">01 /WEBCRAFT</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-02">02 /ARCHITECT</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-03">03 /MOTIONILO</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-04">04 /REA</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-05">05 /ROBLOX</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#pack-06">06 BUNDLE</button>
+      <button type="button" class="hud-chapter-btn" data-scroll-to="#scrolltelling-workflow">07 ALUR AI</button>
+    </div>
+    <div class="hud-telemetry tabular-nums">
+      <span class="hud-pct" id="hud-scroll-pct">0%</span>
+      <span class="hud-vel" id="hud-scroll-vel">0 px/s</span>
+    </div>
+  </aside>
 
   <!-- Full-Resolution Visual Proof Lightbox -->
   <div class="proof-lightbox" id="proof-lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau Gambar Hasil Karya Resolusi Penuh HD">
